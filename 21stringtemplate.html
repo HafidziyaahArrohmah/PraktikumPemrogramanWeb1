@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Template Strings</h1>
+
+
+<p id="demo"></p>
+
+<script>
+let text =
+
+`Warna-warna pelangi ada 7
+merah, jingga, kuning, hijau,
+biru, nila, ungu`;
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<p id="demo2"></p>
+
+<script>
+let header = "Pemrograman Web 1";
+let tags = ["HTML", "CSS", "JavaScript"];
+
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("demo2").innerHTML = html;
+</script>
+</body>
+</html>

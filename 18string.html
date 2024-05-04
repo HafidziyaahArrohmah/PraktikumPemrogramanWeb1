@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Length</h2>
+
+<p>Panjang karakter adalah:</p>
+<p id="demo"></p>
+
+<script>
+let text = "Hafidziyah Arrohmah";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+<p id="demo1"></p>
+
+<script>
+let text = "Waran pertama pelangi adalah \"Merah\" ";
+document.getElementById("demo").innerHTML = text; 
+</script>
+
+<p id="demo1"></p>
+
+<script>
+let text = "Warna pertama pelagi \\ adalah merah";
+document.getElementById("demo").innerHTML = text; 
+</script>
+
+<p id="demo2"></p>
+
+<script>
+// x is a string
+let x = "John";
+
+// y is an object
+let y = new String("John");
+
+document.getElementById("demo2").innerHTML =
+typeof x + "<br>" + typeof y;
+</script>
+
+</body>
+</html>
